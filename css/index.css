@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tipo-letra: "Nunito", Helvetica, Arial, sans-serif;
+    --verde-claro: #0bf96a;
+    --verde-escuro: #049A40;
+    --rosa-claro: #f3a0fd;
+    --rosa-escuro: #e10bf9;
+    --branco: #fff;
+    --preto: #000;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--tipo-letra);
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+ul {
+    list-style: none;
+}
+
+
+p {
+    line-height: 21.82px;
+    padding: 0 10px;
+}
+
+.sessao-titulo {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Header */
+.menu-bg {
+    background-color: var(--verde-claro);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5rem 2rem;
+}
+
+.nav-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    padding: 1rem;
+}
+/* Fim Header */
+
+/* Intro */
+.intro {
+    font-size: 3rem;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    background-color: var(--rosa-escuro);
+    height: 2px;
+    width: 140px;
+    margin: 30px auto;
+}
+
+/* Somos */
+.somos {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.somos-corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.somos-texto {
+    flex: 6 1 160px;
+}
+
+.somos-imagem {
+    flex: 1 1 350px;
+}
+
+
+/* Cursos */
+.curso-corpo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
+.curso {
+    width: 280px;
+    margin: 0 20px;
+}
+
+.curso-titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+.curso-descricao {
+    text-align: center;
+}
+
+/* Planos */
+.planos {
+    background-color: var(--rosa-claro);
+    padding: 1.5rem 0;
+}
+
+.planos-corpo {
+    display: flex;
+    justify-content: center;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.plano {
+    width: 280px;
+    margin: 10px;
+    border: 2px solid var(--verde-claro);
+    padding: 1rem;
+}
+
+.plano:last-child {
+    background-color: var(--verde-claro);
+}
+
+.plano-titulo {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.plano-preco {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plano-preco sup {
+    font-size: 1.2rem;
+}
+
+.plano-divisor {
+    width: 180px;
+    margin: 20px auto;
+}
+
+.plano-lista {
+    width: 195px;
+    margin: 2rem 0;
+}
+
+.plano-lista-item {
+    margin: 10px 5px;
+}
+
+.plano-lista-item::before {
+    content: "";
+    display: flex;
+    height: 5px;
+    width: 5px;
+    background-color: var(--verde-claro);
+    margin-left: -10px;
+}
+
+.plano-btn-comprar {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: 2px solid var(--verde-claro);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
